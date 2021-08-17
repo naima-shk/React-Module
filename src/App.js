@@ -23,11 +23,11 @@ function App() {
     );
 }
 export default App;*/
-import "./styles.css";
+import "./index.css";
 
 import { useState } from "react";
 
-import ListItem from "./component/ListItem";
+import ListItem from "./Component/ListItem";
 //import ArrayList from "./component/ArrayList";
 function App() {
     // const [todos, setTodos] = useState([]);
@@ -43,21 +43,15 @@ function App() {
     };
     //console.log(elementAdd);
 
-    return ( <
-        div className = "App" >
-        <
-        header className = "App-header" >
-        <
-        button onClick = {
-            () => elementAdd("shaikh") } > Update name < /button>
-
-        <
-        div > My name is { nameState } < /div> <
-        div > { nameState } < /div> <
-        ListItem name = { nameState }
-        /> <
-        /header> <
-        /div>
+    return (
+      <div className = "App" >
+        <header className = "App-header" >
+        <button onClick = {() => elementAdd("shaikh") } > Update name < /button>
+         <div> My name is { nameState } < /div>
+         <div> {nameState} </div >
+          <ListItem name = { nameState }/>
+          </header>
+           </div>
     );
 }
 export default App;
