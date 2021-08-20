@@ -1,10 +1,11 @@
 import React , {useState} from 'react';
 
-function Counter(props){
+function Counter(){
   const [items, setItems] = useState([])
   const addItem =() =>{
     setItems([...items, {
       id: items.length,
+      //list: ['naima', 'js', 'React'],
       value: ''
 
     }])
