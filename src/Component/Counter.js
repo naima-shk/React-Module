@@ -1,12 +1,14 @@
 import React , {useState} from 'react';
 
-function Counter(){
+function Counter(props){
   const [items, setItems] = useState([])
   const addItem =() =>{
     setItems([...items, {
       id: items.length,
       value: ''
+
     }])
+    console.log(items)
   }
   return (
     <div>
@@ -19,3 +21,4 @@ function Counter(){
     </div>
   )
 }
+export default Counter;
